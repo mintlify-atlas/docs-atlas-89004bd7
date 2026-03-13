@@ -1,0 +1,132 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "ZBar",
+  "projectDescription": "Open source barcode scanning and decoding library supporting 15+ symbologies with cross-platform bindings.",
+  "theme": "aspen",
+  "primaryColor": "#dc0a7d",
+  "lightColor": "#0d8381",
+  "darkColor": "#a0a193",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/symbologies",
+              "concepts/image-processing"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/building-from-source",
+              "guides/scanning-images",
+              "guides/scanning-video",
+              "guides/configuration",
+              "guides/platform-specific"
+            ]
+          },
+          {
+            "group": "Language Bindings",
+            "pages": [
+              "bindings/c-api",
+              "bindings/cpp-api",
+              "bindings/python",
+              "bindings/perl",
+              "bindings/java"
+            ]
+          },
+          {
+            "group": "GUI Widgets",
+            "pages": [
+              "widgets/gtk",
+              "widgets/qt",
+              "widgets/pygtk"
+            ]
+          },
+          {
+            "group": "CLI Tools",
+            "pages": [
+              "cli/zbarcam",
+              "cli/zbarimg"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/dbus-integration",
+              "advanced/v4l2-video",
+              "advanced/performance-tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core API",
+            "pages": [
+              "api/scanner",
+              "api/decoder",
+              "api/image",
+              "api/symbol"
+            ]
+          },
+          {
+            "group": "High-Level API",
+            "pages": [
+              "api/processor",
+              "api/image-scanner",
+              "api/video",
+              "api/window"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "api/config",
+              "api/errors"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-symbology barcode decoding (EAN, UPC, Code 128, QR Code, etc.)",
+    "Video4Linux2 webcam integration",
+    "Cross-platform support (Linux, Windows, macOS, Android, iOS)",
+    "Language bindings for C, C++, Python, Perl, and Java",
+    "GUI widgets for GTK and Qt",
+    "DBus integration for system-level events",
+    "Command-line tools for image and video scanning"
+  ],
+  "publicApiSurface": [
+    "zbar_image_scanner_create()",
+    "zbar_scan_image()",
+    "zbar_processor_create()",
+    "zbar_video_create()",
+    "zbar_window_create()",
+    "zbar_decoder_create()",
+    "zbar_scanner_create()",
+    "zbar::ImageScanner",
+    "zbar::Processor",
+    "zbar::Video",
+    "zbar.ImageScanner (Python)",
+    "zbar.Processor (Python)",
+    "Barcode::ZBar (Perl)",
+    "net.sourceforge.zbar (Java)"
+  ]
+}
